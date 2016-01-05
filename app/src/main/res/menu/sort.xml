@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/action_sort"
+        android:title="@string/action_sort"
+        android:icon="@drawable/ic_sort_white_18dp"
+        app:showAsAction="always">
+        <menu>
+            <group android:checkableBehavior="single"
+                android:checkable="true">
+                <item android:id="@+id/menu_sort_alphabetical"
+                    android:title="@string/sort_alphabetically" />
+                <item android:id="@+id/menu_sort_views"
+                    android:title="@string/sort_byviews" />
+                <item android:id="@+id/menu_sort_updates"
+                    android:title="@string/sort_bylastupdate" />
+            </group>
+            <group android:checkable="true">
+                <item android:id="@+id/menu_sort_type"
+                    android:title="@string/sort_reverse_order"
+                    android:checkableBehavior="all"
+                    android:checkable="true" />
+            </group>
+        </menu>
+    </item>
+</menu>

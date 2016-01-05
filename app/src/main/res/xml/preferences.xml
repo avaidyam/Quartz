@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="Theme">
+        <com.galaxas0.Quartz.ui.LineColorPickerPreference
+            android:defaultValue="#212121"
+            android:key="themeColor"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            android:title="Theme Color"
+            android:summary="Select the application wide theme."/>
+        <CheckBoxPreference android:key="expandColumns"
+            android:title="Expand Columns"
+            android:summaryOn="Display more content in the library."
+            android:summaryOff="Display less content in the library."
+            android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Data">
+        <CheckBoxPreference android:key="wifiOnly"
+            android:title="Download Only Over Wi-Fi"
+            android:summaryOn="Use LTE when available. Note that charges may apply."
+            android:summaryOff="Do not use LTE Data."
+            android:enabled="false"
+            android:defaultValue="true" />
+        <CheckBoxPreference android:key="encryptData"
+            android:title="Encrypt Data"
+            android:summaryOn="Data will be encrypted on this device for your security."
+            android:summaryOff="Data will not be encrypted, and can be accessed freely."
+            android:enabled="false"
+            android:defaultValue="false" />
+        <CheckBoxPreference android:key="compressData"
+            android:title="Compress Data"
+            android:summaryOn="Compress data to use less space. Note that accessing your data may take longer."
+            android:summaryOff="Do not compress data."
+            android:enabled="false"
+            android:defaultValue="true" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Reader">
+        <CheckBoxPreference android:key="reverseOrientation"
+            android:title="Reverse Orientation"
+            android:summaryOn="Read by scrolling left to right."
+            android:summaryOff="Read by scrolling top to bottom."
+            android:defaultValue="false" />
+        <CheckBoxPreference android:key="reverseLayout"
+            android:title="Reverse Layout"
+            android:summaryOn="Read by scrolling right to left or top to bottom."
+            android:summaryOff="Read by scrolling left to right or top to bottom."
+            android:defaultValue="false" />
+        <CheckBoxPreference android:key="nightMode"
+            android:title="Night Mode"
+            android:summaryOn="Dim the screen while reading if there is no light."
+            android:summaryOff="Keep the same brightness level when reading."
+            android:defaultValue="false" />
+        <CheckBoxPreference android:key="continuousPages"
+            android:title="Continuous Reading"
+            android:summaryOn="Append new chapters to the same screen while reading."
+            android:summaryOff="Open a new screen for each chapter read."
+            android:defaultValue="false" />
+        <CheckBoxPreference android:key="zoomMinimap"
+            android:title="Zoom Minimap"
+            android:summaryOn="Show a draggable minimap while zooming the page."
+            android:summaryOff="Don't show a minimap while zooming the page."
+            android:defaultValue="true" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Other">
+        <SwitchPreference
+            android:key="startNewTask"
+            android:title="Individual Reader Tasks"
+            android:switchTextOn=""
+            android:switchTextOff=""
+            android:summaryOn="Open chapters of a manga as new documents."
+            android:summaryOff="Open chapters of a manga in the same document."
+            android:defaultValue="false" />
+        <SwitchPreference
+            android:key="orientationMatch"
+            android:title="Match Orientation"
+            android:switchTextOn=""
+            android:switchTextOff=""
+            android:summaryOn="Match the reading orientation of the screen."
+            android:summaryOff="Don't change the reading orientation."
+            android:defaultValue="false" />
+        <Preference android:title="Show Welcome" >
+            <intent
+                android:targetPackage="com.galaxas0.Quartz"
+                android:targetClass="com.galaxas0.Quartz.activity.WelcomeActivity" />
+        </Preference>
+        <PreferenceScreen
+            android:key="devInfo"
+            android:title="Developer Information">
+            <PreferenceCategory android:title="User Interface">
+                <SwitchPreference
+                    android:key="animationSpeed"
+                    android:title="Animation Speed"
+                    android:switchTextOn=""
+                    android:switchTextOff=""
+                    android:summaryOn="Slow down animations by 5x."
+                    android:summaryOff="Use the default animation speed."
+                    android:defaultValue="false" />
+            </PreferenceCategory>
+            <PreferenceCategory android:title="Data Usage">
+                <Preference
+                    android:key="cache"
+                    android:selectable="false"
+                    android:title="Cache Size"
+                    android:summary="0 MB / 0 MB"/>
+                <Preference
+                    android:key="downloads"
+                    android:selectable="false"
+                    android:title="Download Size"
+                    android:summary="0 MB / 0 MB"/>
+            </PreferenceCategory>
+            <PreferenceCategory android:title="Build Information">
+                <Preference
+                    android:key="build-info"
+                    android:selectable="false"
+                    android:title="Build Version"
+                    android:summary="1.0.0-dev [100]"/>
+                <Preference
+                    android:key="date"
+                    android:selectable="false"
+                    android:title="Build Date"
+                    android:summary="2014-01-01 12:01 AM"/>
+            </PreferenceCategory>
+            <PreferenceCategory android:title="Device Information">
+                <Preference
+                    android:key="device"
+                    android:selectable="false"
+                    android:title="Device Name"
+                    android:summary="LGE Nexus 5"/>
+                <Preference
+                    android:key="resolution"
+                    android:selectable="false"
+                    android:title="Screen Resolution"
+                    android:summary="1920x1080"/>
+                <Preference
+                    android:key="density"
+                    android:selectable="false"
+                    android:title="Screen Density"
+                    android:summary="480dpi (xxhdpi)"/>
+                <Preference
+                    android:key="api-release"
+                    android:selectable="false"
+                    android:title="API Version"
+                    android:summary="Android Lollipop 21"/>
+            </PreferenceCategory>
+        </PreferenceScreen>-
+    </PreferenceCategory>
+</PreferenceScreen>

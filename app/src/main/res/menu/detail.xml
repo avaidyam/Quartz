@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.galaxas0.Quartz.activity.DetailActivity" >
+    <item android:id="@+id/action_share"
+        android:title="@string/action_share"
+        android:orderInCategory="99"
+        android:icon="@drawable/ic_share_white_18dp"
+        app:showAsAction="always"/>
+    <item android:id="@+id/action_star"
+        android:title="@string/action_share"
+        android:orderInCategory="98"
+        android:icon="@drawable/ic_star_outline_white_18dp"
+        app:showAsAction="always"/>
+    <item android:id="@+id/action_bookmark"
+        android:title="@string/action_share"
+        android:orderInCategory="97"
+        android:icon="@drawable/ic_bookmark_outline_white_18dp"
+        app:showAsAction="always"/>
+</menu>

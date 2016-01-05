@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/action_readnow"
+            android:icon="@drawable/ic_action_history"
+            android:title="Read Now" />
+        <item android:id="@+id/action_explore"
+            android:icon="@drawable/ic_action_menu"
+            android:title="Explore" />
+    </group>
+    <item android:title="Sources">
+        <menu android:checkableBehavior="single">
+            <item android:id="@+id/source_mangahere"
+                android:title="MangaHere" />
+        </menu>
+    </item>
+    <item android:title="Other">
+        <menu>
+            <item android:id="@+id/action_settings"
+                android:icon="@drawable/ic_settings"
+                android:title="Settings" />
+            <item android:id="@+id/action_feedback"
+                android:icon="@drawable/ic_comment"
+                android:title="Feedback" />
+        </menu>
+    </item>
+</menu>

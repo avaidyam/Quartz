@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable name="manga" type="com.galaxas0.Quartz.manga.Manga"/>
+    </data>
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.galaxas0.Quartz.ui.ZoomLayout
+            android:id="@+id/zoom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:scrollbars="none"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fff"/>
+        </com.galaxas0.Quartz.ui.ZoomLayout>
+        <xyz.danoz.recyclerviewfastscroller.vertical.VerticalRecyclerViewFastScroller
+            android:id="@+id/fast_scroller"
+            android:layout_width="16dp"
+            android:layout_height="match_parent"
+            app:rfs_barColor="@color/grey_700"
+            app:rfs_handleColor="@color/grey_900"
+            android:layout_gravity="right" />
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/previous_chapter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left"
+            android:layout_margin="12dp"
+            app:layout_anchorGravity="bottom|left|start"
+            app:layout_behavior="com.galaxas0.Quartz.ui.ScrollAwareBehavior"
+            android:src="@drawable/ic_keyboard_arrow_left_white_48dp" />
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/next_chapter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginRight="32dp"
+            app:layout_anchorGravity="bottom|right|end"
+            app:layout_behavior="com.galaxas0.Quartz.ui.ScrollAwareBehavior"
+            android:src="@drawable/ic_keyboard_arrow_right_white_48dp" />
+    </android.support.design.widget.CoordinatorLayout>
+</layout>

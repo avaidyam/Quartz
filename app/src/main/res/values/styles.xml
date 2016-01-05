@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- The following are API <21 shim styles. -->
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat">
+        <item name="colorAccent">@color/material_white</item>
+        <item name="colorPrimary">@color/blue_grey_700</item>
+        <item name="colorPrimaryDark">@color/blue_grey_900</item>
+
+        <item name="colorControlHighlight">?colorAccent</item>
+
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+    <style name="AppTheme" parent="AppTheme.Base" />
+
+    <!-- The following are API-agnostic styles. -->
+
+    <style name="AppTheme.Detail" parent="AppTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+    <style name="AppTheme.Fullscreen" parent="AppTheme">
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
+    <!-- The following are color theme styles. -->
+
+    <style name="AppTheme.Red" parent="AppTheme">
+        <item name="colorAccent">@color/material_white</item>
+        <item name="colorPrimary">@color/red_700</item>
+        <item name="colorPrimaryDark">@color/red_900</item>
+    </style>
+    <style name="AppTheme.Pink" parent="AppTheme">
+        <item name="colorAccent">@color/material_white</item>
+        <item name="colorPrimary">@color/pink_700</item>
+        <item name="colorPrimaryDark">@color/pink_900</item>
+    </style>
+    <style name="AppTheme.Purple" parent="AppTheme">
+        <item name="colorAccent">@color/material_white</item>
+        <item name="colorPrimary">@color/purple_700</item>
+        <item name="colorPrimaryDark">@color/purple_900</item>
+    </style>
+    <style name="AppTheme.DeepPurple" parent="AppTheme">
+        <item name="colorAccent">@color/material_white</item>
+        <item name="colorPrimary">@color/dark_purple_700</item>
+        <item name="colorPrimaryDark">@color/dark_purple_900</item>
+    </style>
+    <style name="AppTheme.Indigo" parent="AppTheme">
+        <item name="colorAccent">@color/material_white</item>
+        <item name="colorPrimary">@color/indigo_700</item>
+        <item name="colorPrimaryDark">@color/indigo_900</item>
+    </style>
+    <style name="AppTheme.Blue" parent="AppTheme">
+        <item name="colorAccent">@color/material_white</item>
+        <item name="colorPrimary">@color/blue_700</item>
+        <item name="colorPrimaryDark">@color/blue_900</item>
+    </style>
+    <style name="AppTheme.LightBlue" parent="AppTheme">
+        <item name="colorAccent">@color/material_white</item>
+        <item name="colorPrimary">@color/light_blue_700</item>
+        <item name="colorPrimaryDark">@color/light_blue_900</item>
+    </style>
+    <style name="AppTheme.Cyan" parent="AppTheme">
+        <item name="colorAccent">@color/material_white</item>
+        <item name="colorPrimary">@color/cyan_700</item>
+        <item name="colorPrimaryDark">@color/cyan_900</item>
+    </style>
+    <style name="AppTheme.Teal" parent="AppTheme">
+        <item name="colorAccent">@color/material_white</item>
+        <item name="colorPrimary">@color/teal_700</item>
+        <item name="colorPrimaryDark">@color/teal_900</item>
+    </style>
+    <style name="AppTheme.Green" parent="AppTheme">
+        <item name="colorAccent">@color/material_white</item>
+        <item name="colorPrimary">@color/green_700</item>
+        <item name="colorPrimaryDark">@color/green_900</item>
+    </style>
+    <style name="AppTheme.LightGreen" parent="AppTheme">
+        <item name="colorAccent">@color/material_white</item>
+        <item name="colorPrimary">@color/light_green_700</item>
+        <item name="colorPrimaryDark">@color/light_green_900</item>
+    </style>
+    <style name="AppTheme.Lime" parent="AppTheme">
+        <item name="colorAccent">@color/material_white</item>
+        <item name="colorPrimary">@color/lime_700</item>
+        <item name="colorPrimaryDark">@color/lime_900</item>
+    </style>
+    <style name="AppTheme.Yellow" parent="AppTheme">
+        <item name="colorAccent">@color/material_white</item>
+        <item name="colorPrimary">@color/yellow_700</item>
+        <item name="colorPrimaryDark">@color/yellow_900</item>
+    </style>
+    <style name="AppTheme.Amber" parent="AppTheme">
+        <item name="colorAccent">@color/material_white</item>
+        <item name="colorPrimary">@color/amber_700</item>
+        <item name="colorPrimaryDark">@color/amber_900</item>
+    </style>
+    <style name="AppTheme.Orange" parent="AppTheme">
+        <item name="colorAccent">@color/material_white</item>
+        <item name="colorPrimary">@color/orange_700</item>
+        <item name="colorPrimaryDark">@color/orange_900</item>
+    </style>
+    <style name="AppTheme.DeepOrange" parent="AppTheme">
+        <item name="colorAccent">@color/material_white</item>
+        <item name="colorPrimary">@color/deep_orange_700</item>
+        <item name="colorPrimaryDark">@color/deep_orange_900</item>
+    </style>
+    <style name="AppTheme.Brown" parent="AppTheme">
+        <item name="colorAccent">@color/material_white</item>
+        <item name="colorPrimary">@color/brown_700</item>
+        <item name="colorPrimaryDark">@color/brown_900</item>
+    </style>
+    <style name="AppTheme.Grey" parent="AppTheme">
+        <item name="colorAccent">@color/material_white</item>
+        <item name="colorPrimary">@color/grey_700</item>
+        <item name="colorPrimaryDark">@color/grey_900</item>
+    </style>
+    <style name="AppTheme.BlueGrey" parent="AppTheme">
+        <item name="colorAccent">@color/material_white</item>
+        <item name="colorPrimary">@color/blue_grey_700</item>
+        <item name="colorPrimaryDark">@color/blue_grey_900</item>
+    </style>
+</resources>

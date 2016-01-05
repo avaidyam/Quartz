@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">Quartz</string>
+
+    <string name="title_activity_welcome">Welcome</string>
+    <string name="title_activity_library">Library</string>
+    <string name="title_activity_detail">Details</string>
+    <string name="title_activity_reader">Reader</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_search">Search</string>
+
+    <string name="action_help">Help</string>
+    <string name="action_feedback">Feedback</string>
+    <string name="action_share">Share</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_star">Star</string>
+    <string name="action_bookmark">Bookmark</string>
+    <string name="action_sort">Sort</string>
+
+    <string name="previous_chapter">Previous Chapter</string>
+    <string name="next_chapter">Next Chapter</string>
+
+    <string name="sort_alphabetically">Sort alphabetically</string>
+    <string name="sort_byviews">Sort by views</string>
+    <string name="sort_bylastupdate">Sort by last update</string>
+    <string name="sort_reverse_order">Reverse Order</string>
+
+    <string name="chapters_text">Chapters</string>
+    <string name="search_hint">Search Manga…</string>
+
+    <string name="accept">Accept</string>
+    <string name="decline">Decline</string>
+
+    <string name="welcome_title">Welcome</string>
+    <string name="terms_of_use"><b>Before we begin, here is some important legal information
+        regarding your use of this app. This will only take a minute!</b>         \n\nTest Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test
+        Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test
+        Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test
+        Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test
+        Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test
+        Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test
+        Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test
+        Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test
+        Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test.\n\n<b>By proceeding, you accept these terms and conditions.</b></string>
+    <string name="setup_complete">Start</string>
+    <string name="hero_image">Hero Image</string>
+    <string name="page_image">Page</string>
+    <string name="no_content">there\'s nothing here</string>
+
+    <!-- Default title for color picker dialog [CHAR LIMIT=30] -->
+    <string name="color_picker_default_title">Select a Color</string>
+    <!-- Content description for a color square. -->
+    <string name="color_swatch_description">Color <xliff:g id="color_index" example="14">%1$d</xliff:g></string>
+    <!-- Content description for a selected color square. -->
+    <string name="color_swatch_description_selected">Color <xliff:g id="color_index" example="14">%1$d</xliff:g> selected</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+</resources>

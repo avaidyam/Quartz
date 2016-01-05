@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe_refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--
+    <TextView
+        android:id="@+id/nothing"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceListItem"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="normal"
+        android:textAllCaps="true"
+        android:background="@color/red_700"
+        android:gravity="center"
+        android:text="@string/no_content"
+        android:visibility="gone"
+        android:alpha="0.0"
+        android:scaleX="0.0"
+        android:scaleY="0.0"/>
+    -->
+    <com.galaxas0.Quartz.ui.GridRecyclerView
+        android:id="@+id/recycler_view"
+        android:scrollbars="vertical"
+        android:scrollbarStyle="outsideOverlay"
+        android:layoutAnimation="@animator/pop_in"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <xyz.danoz.recyclerviewfastscroller.vertical.VerticalRecyclerViewFastScroller
+        android:id="@+id/fast_scroller"
+        android:layout_width="16dp"
+        android:layout_height="match_parent"
+        app:rfs_barColor="@color/grey_700"
+        app:rfs_handleColor="?colorPrimaryDark"
+        android:layout_gravity="right" />
+</android.support.v4.widget.SwipeRefreshLayout>
